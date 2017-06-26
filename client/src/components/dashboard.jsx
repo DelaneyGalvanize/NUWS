@@ -28,19 +28,21 @@ export default class Dashboard extends React.Component {
                 // console.log('result',result);
               userData = {
                  articles: result.articles,
-                 imageP : result.articles[0].urlToImage
+                 imageP : result.articles[0].urlToImage,
+                 imageP2: result.articles[1].urlToImage
                }
-              //  console.log('user data', userData)
+               console.log('imageP', userData.imageP)
             },
 
             error: function (err) {
               console.log(err);
             }
     })
-      .then((result) =>{
+      .then(() =>{
         this.setState({
           stories: userData.articles,
-          pic: userData.imageP
+          pic: userData.imageP,
+          pic2:userData.imageP2
         })
       })
     }
@@ -50,30 +52,30 @@ export default class Dashboard extends React.Component {
     render() {
       let recent = this.state.stories
       let pic= this.state.pic
+      let pic2 = this.state.pic2
 
-      console.log('recent',recent)
+      console.log(recent)
 
-      let newsList=recent.map(function() {
+      let newsList=recent.map(function(data) {
         return <img src={pic} width="100%" alt='stories' />
+      })
+
+      let newsList2=recent.map(function(data) {
+        return <img src={pic2} width="100%" alt='stories' />
       })
 
       return (
       <div>
         <Link to="/plan">Plan</Link>
-        <div className="container " >
+        <div className="jumbotron " >
           <div className="news-stories">
             {newsList[0]}
           </div>
+            <div className="jumbotron" >
           <div className="news-stories">
-            {newsList[1]}
+            {newsList2[0]}
           </div>
-          <div className="news-stories">
-            {newsList[2]}
-          </div>
-
-      {/* <div className="jumbotron">
-        <h1>Nuws</h1>
-      </div> */}
+        </div>
     </div>
 </div>
     );
