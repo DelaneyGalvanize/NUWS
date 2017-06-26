@@ -1,0 +1,25 @@
+{
+  "name": "well-spent",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1",
+    "react-build": "^1.0.8",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-scroll-box": "^0.3.3-beta",
+    "react-transition-group": "^1.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3000"
+}
