@@ -45,6 +45,7 @@ class LoginPage extends React.Component {
   render() {
     return (
       <div className="container">
+        <div className="login-html index-page">
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email address</label>
@@ -57,6 +58,11 @@ class LoginPage extends React.Component {
           <button type="submit" className="btn btn-default">Log In</button>
         </form>
       </div>
+    </div>
+
+
+
+
     );
   };
 }

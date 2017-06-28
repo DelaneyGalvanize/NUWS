@@ -31,9 +31,9 @@ export default class textMessage extends React.Component {
   render() {
     return (
       <div>
-        <p>Enter phone number to send SMS to: </p>
+        {/* <p>Enter phone number to send SMS to: </p>
       <input onChange={this.changeNumber.bind(this)} value={this.state.recipient} placeholder="+12223334444"/>
-        <p>Don't forget your country code, e.g., +1.</p>
+        <p>Don't forget your country code, e.g., +1.</p> */}
 
       <p>Enter Message: </p>
     <input onChange={this.changeMessage.bind(this)} value={this.state.message} placeholder="Save Me"/>

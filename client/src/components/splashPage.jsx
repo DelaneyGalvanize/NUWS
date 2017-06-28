@@ -7,11 +7,21 @@ export default class SplashPage extends React.Component {
     return (
       <div className = 'container' >
         <div className="jumbotron">
-
-          <h2>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
-          <p className="lead">If your current relationship has shown signs of abuse, we want to help you get out.</p>
+          <h1> NUWS LOGO OR SOMETHING HERE </h1>
         </div>
+
         <div className= 'jumbotron' >
+          <div id="page-content" className="index-page">
+      <div className="box-content box-2 container box-style-2 box-shadow">
+          <div className="row">
+              <div className="col-md-12">
+                  <h3>Welcome to NUWS!</h3>
+                  <h2>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
+                  <p className="lead">If your current relationship has shown signs of abuse, we want to help you get out.</p>
+              </div>
+          </div>
+      </div>
+    </div>
           <h3>The form on the next page allows you to put in two of your closest contacts and their phone numbers. When you double click the (black) bar at the top of the NUWS page a text with a message of your choice will be sent to your contacts immediately. </h3>
 
               <h3>
@@ -20,6 +30,7 @@ export default class SplashPage extends React.Component {
           <p>
             <Link to="/signup" className="btn btn-lg btn-success" href="#" role="button">Sign Up</Link>
           </p>
+
         </div>
 
       </div>

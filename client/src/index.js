@@ -11,7 +11,11 @@ import SignupPage from './components/signupPage.jsx'
 import SplashPage from './components/splashPage.jsx'
 import Navbar from './components/navBar.jsx'
 import Dashboard from './components/dashboard.jsx'
+import Dashboard2 from './components/dashboard2.jsx'
+import Dashboard3 from './components/dashboard3.jsx'
 import Plan from './components/plan.jsx'
+import textMessage from './components/textMessage.jsx'
+
 
 
 class App extends React.Component {
@@ -47,12 +51,11 @@ class App extends React.Component {
           <Navbar loggedIn={this.state.token !== null} onSignOut={this.destroyToken}/>
           <div>
             <Route exact path="/" component={SplashPage}/>
-            <Route path="/signup" component={SignupPage}/>
+            <Route path="/signup" render={(props) => <SignupPage onLogin={this.saveToken} />}/>
             <Route path="/login" render={(props) => <LoginPage onLogin={this.saveToken} />}/>
             <Route path="/dashboard" component={Dashboard}/>
             <Route exact path="/plan" component={Plan}/>
-
-
+            <Route path="/textMessage" component={textMessage}/>
           </div>
         </div>
       </Router>

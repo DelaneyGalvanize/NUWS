@@ -15,8 +15,10 @@
     "jsonwebtoken": "^7.4.1",
     "knex": "^0.13.0",
     "morgan": "~1.8.1",
+    "node-env-file": "^0.1.8",
     "nodemon": "^1.11.0",
     "pg": "^6.4.0",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "twilio": "^3.4.0"
   }
 }

@@ -4,13 +4,15 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "fetch": "^1.1.0",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-build": "^1.0.8",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
     "react-scroll-box": "^0.3.3-beta",
-    "react-transition-group": "^1.2.0"
+    "react-transition-group": "^1.2.0",
+    "twilio": "^3.4.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
