@@ -15,6 +15,7 @@ router.post('/', function(req, res, next) {
     .select(['id', 'email', 'hashed_password'])
     .where('email', email)
     .then((users) => {
+      console.log(users);
       if (users.length === 0) {
         res.setHeader("Content-Type", "plain/text");
         res.status(400);
@@ -26,13 +27,16 @@ router.post('/', function(req, res, next) {
         const token = jwt.sign({
           userId: users[0].id
         }, SECRET);
+        
         res.setHeader('Content-Type', 'application/json')
         res.send(token);
+        // console.log(token)
       }, () => {
         res.setHeader('Content-Type', 'plain/text');
         res.status(400);
         res.send('Bad email or password');
       })
+
     })
 });
 

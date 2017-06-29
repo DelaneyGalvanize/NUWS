@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var users = require('./routes/users');
 var tokens = require('./routes/tokens');
 var sms= require('./routes/sendsms')
+// var plan=require('./routes/plans')
 
 
 var app = express();
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/api/users', users);
 app.use('/api/tokens', tokens);
 app.use('/api/sendsms', sms)
+// app.use('/api/plans', plan)
 
 
 // The "catchall" handler: for any request that doesn't

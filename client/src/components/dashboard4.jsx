@@ -38,7 +38,7 @@ export default class Dashboard4 extends React.Component {
                  imageP3: result.articles[2].urlToImage,
                  imageP4: result.articles[3].urlToImage
                }
-               console.log('imageP', userData.imageP)
+               
             },
 
             error: function (err) {
@@ -66,8 +66,6 @@ export default class Dashboard4 extends React.Component {
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
       // let pic4= this.state.pic4
-
-      console.log(recent)
 
       let newsList=recent.map(function(data) {
         return <img src={pic} width="50%" alt='stories' />
