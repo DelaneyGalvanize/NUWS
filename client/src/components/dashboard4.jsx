@@ -82,7 +82,7 @@ export default class Dashboard4 extends React.Component {
       })
       // let newsList4=recent.map(function(data) {
       //   return <img src={pic4} width="50%" alt='stories' />
-    
+
 
 
       return (
@@ -99,21 +99,21 @@ export default class Dashboard4 extends React.Component {
 
   <Grid>
     <Row>
-    <Col xs={6} md={4}>
+    <Col xs={6} md={3}>
       <Thumbnail>
         {newsList[0]}
         <h3>Thumbnail label</h3>
         <p>Description</p>
       </Thumbnail>
     </Col>
-    <Col xs={6} md={4}>
+    <Col xs={6} md={3}>
       <Thumbnail>
         {newsList2[0]}
         <h3>Thumbnail label</h3>
         <p>Description</p>
       </Thumbnail>
     </Col>
-    <Col xs={6} md={4}>
+    <Col xs={6} md={3}>
       <Thumbnail>
         {newsList3[0]}
         <h3>Thumbnail label</h3>

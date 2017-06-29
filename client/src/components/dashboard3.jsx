@@ -87,17 +87,6 @@ export default class Dashboard3 extends React.Component {
 
 
       return (
-    //   <div>
-    //     <div className="container">
-    //       <div className="news-stories">
-    //         {newsList[0]}
-    //         {newsList2[0]}
-    //         {newsList3[0]}
-    //         {newsList4[0]}
-    //       </div>
-    //     </div>
-    // </div>
-
     <Grid>
       <Row>
       <Col xs={6} md={3}>

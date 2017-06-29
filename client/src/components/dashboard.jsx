@@ -97,7 +97,6 @@ export default class Dashboard extends React.Component {
 
             <Carousel>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500"/>
                 {newsList[0]}
                 <Carousel.Caption>
                   <h3>First slide label</h3>
@@ -105,7 +104,6 @@ export default class Dashboard extends React.Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500"/>
                 {newsList2[0]}
     <Carousel.Caption>
       <h3>Second slide label</h3>
@@ -113,7 +111,6 @@ export default class Dashboard extends React.Component {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img width={900} height={500} alt="900x500"/>
     {newsList3[0]}
     <Carousel.Caption>
       <h3>Third slide label</h3>
@@ -122,15 +119,6 @@ export default class Dashboard extends React.Component {
   </Carousel.Item>
 </Carousel>
 
-
-
-
-
-            {/* <h4> carousel of entertainment </h4>
-            {newsList[0]}
-            {newsList2[0]}
-            {newsList3[0]}
-            {newsList4[0]} */}
 
         </div>
         <div className="container">

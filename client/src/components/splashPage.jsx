@@ -25,11 +25,11 @@ export default class SplashPage extends React.Component {
           <div id="page-content" className="index-page">
       <div className="box-content box-2 container box-style-2 box-shadow">
           <div className="row">
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                   <p>Stats?</p>
                   <p>Stats?</p>
                   <p>Stats?</p>
-              </div>
+              </div> */}
           </div>
       </div>
     </div>

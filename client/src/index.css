@@ -165,7 +165,7 @@ header a.logo img{min-height: 70px; margin-left: 0; height: 136px; width: 136px;
 .box-content {margin-bottom: 40px;}
 
 .box-content.box-style-1{background: url(./images/box-style-1.jpg) no-repeat fixed 100% 100%; }
-.box-content.box-style-2{background: url(./images/movingOn.jpg) no-repeat fixed 50% 100%; }
+.box-content.box-style-2{background: url(./images/A-Different-Life-A-New-Start.jpg) no-repeat fixed 50% 100%; }
 
 .box-content.box-1 {}
 .box-content.box-1 .service{padding: 50px 30px 20px;text-align: center;background:#fff;-webkit-box-shadow: 0px 56px 36px -60px #121D12; -moz-box-shadow: 0px 56px 36px -60px #121D12; -o-box-shadow: 0px 56px 36px -60px #121D12;min-height: 300px;}
@@ -423,9 +423,14 @@ p{
 }
 
 .thumbnail {
-  border: 5px solid #330033;
+  border: 3px solid black;
 }
 
 .newsThumb {
   border: 1px solid black;
+}
+
+.carousel {
+  width:640px;
+  height:360px;
 }
