@@ -1,7 +1,7 @@
 import React from 'react';
 import 'whatwg-fetch';
 
-export default class textMessage extends React.Component {
+export default class Sms extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

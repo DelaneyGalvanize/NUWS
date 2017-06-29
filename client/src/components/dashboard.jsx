@@ -4,6 +4,12 @@ import $ from 'jquery';
 import Dashboard2 from './dashboard2.jsx'
 import Dashboard3 from './dashboard3.jsx'
 import Dashboard4 from './dashboard4.jsx'
+import AudioRecorder from './recorder/AudioRecorder.jsx'
+import Sms from './sms.jsx'
+import Carousel from 'react-bootstrap/lib/Carousel'
+// import Caption from 'react-bootstrap/lib/Caption'
+
+
 
 
 export default class Dashboard extends React.Component {
@@ -36,7 +42,7 @@ export default class Dashboard extends React.Component {
                  imageP3: result.articles[2].urlToImage,
                  imageP4: result.articles[3].urlToImage
                }
-               console.log('imageP', userData.imageP)
+
             },
 
             error: function (err) {
@@ -64,9 +70,6 @@ export default class Dashboard extends React.Component {
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
       let pic4= this.state.pic4
-      let pic5 = this.state.pic5
-
-      console.log(recent)
 
       let newsList=recent.map(function(data) {
         return <img src={pic} width="50%" alt='stories' />
@@ -87,15 +90,48 @@ export default class Dashboard extends React.Component {
       return (
       <div>
         <Link to="/plan">Plan</Link>
-        <Link to="/textMessage">SMS Text</Link>
+        <AudioRecorder></AudioRecorder>
+        <Sms></Sms>
         <div className="container">
-          <div className="news-stories">
-            <h4> carousel of entertainment </h4>
+
+
+            <Carousel>
+              <Carousel.Item>
+                <img width={900} height={500} alt="900x500"/>
+                {newsList[0]}
+                <Carousel.Caption>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img width={900} height={500} alt="900x500"/>
+                {newsList2[0]}
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={900} height={500} alt="900x500"/>
+    {newsList3[0]}
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+
+
+
+
+            {/* <h4> carousel of entertainment </h4>
             {newsList[0]}
             {newsList2[0]}
             {newsList3[0]}
-            {newsList4[0]}
-          </div>
+            {newsList4[0]} */}
+
         </div>
         <div className="container">
           <div className="news-stories">
@@ -116,6 +152,7 @@ export default class Dashboard extends React.Component {
           </div>
         </div>
     </div>
+
 
     );
   }

@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import Navbar from './navBar.jsx'
-import Button from 'react-bootstrap/lib/Button';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
@@ -105,10 +102,6 @@ export default class Dashboard2 extends React.Component {
           {newsList[0]}
           <h3>Thumbnail label</h3>
           <p>Description</p>
-          <p>
-            <Button bsStyle="primary">Button</Button>&nbsp;
-            <Button bsStyle="default">Button</Button>
-          </p>
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
@@ -116,10 +109,7 @@ export default class Dashboard2 extends React.Component {
           {newsList2[0]}
           <h3>Thumbnail label</h3>
           <p>Description</p>
-          <p>
-            <Button bsStyle="primary">Button</Button>&nbsp;
-            <Button bsStyle="default">Button</Button>
-          </p>
+
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
@@ -127,10 +117,7 @@ export default class Dashboard2 extends React.Component {
           {newsList3[0]}
           <h3>Thumbnail label</h3>
           <p>Description</p>
-          <p>
-            <Button bsStyle="primary">Button</Button>&nbsp;
-            <Button bsStyle="default">Button</Button>
-          </p>
+
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
@@ -138,10 +125,7 @@ export default class Dashboard2 extends React.Component {
           {newsList4[0]}
           <h3>Thumbnail label</h3>
           <p>Description</p>
-          <p>
-            <Button bsStyle="primary">Button</Button>&nbsp;
-            <Button bsStyle="default">Button</Button>
-          </p>
+
         </Thumbnail>
       </Col>
       </Row>

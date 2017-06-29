@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import Navbar from './navBar.jsx'
-import Button from 'react-bootstrap/lib/Button';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
@@ -53,8 +50,8 @@ export default class Dashboard4 extends React.Component {
           stories: userData.articles,
           pic: userData.imageP,
           pic2:userData.imageP2,
-          pic3:userData.imageP3,
-          pic4:userData.imageP4
+          pic3:userData.imageP3
+          // pic4:userData.imageP4
         })
       })
     }
@@ -68,7 +65,7 @@ export default class Dashboard4 extends React.Component {
       let pic= this.state.pic
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
-      let pic4= this.state.pic4
+      // let pic4= this.state.pic4
 
       console.log(recent)
 
@@ -83,9 +80,9 @@ export default class Dashboard4 extends React.Component {
       let newsList3=recent.map(function(data) {
         return <img src={pic3} width="50%" alt='stories' />
       })
-      let newsList4=recent.map(function(data) {
-        return <img src={pic4} width="50%" alt='stories' />
-      })
+      // let newsList4=recent.map(function(data) {
+      //   return <img src={pic4} width="50%" alt='stories' />
+    
 
 
       return (
@@ -107,10 +104,6 @@ export default class Dashboard4 extends React.Component {
         {newsList[0]}
         <h3>Thumbnail label</h3>
         <p>Description</p>
-        <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
-        </p>
       </Thumbnail>
     </Col>
     <Col xs={6} md={4}>
@@ -118,10 +111,6 @@ export default class Dashboard4 extends React.Component {
         {newsList2[0]}
         <h3>Thumbnail label</h3>
         <p>Description</p>
-        <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
-        </p>
       </Thumbnail>
     </Col>
     <Col xs={6} md={4}>
@@ -129,10 +118,6 @@ export default class Dashboard4 extends React.Component {
         {newsList3[0]}
         <h3>Thumbnail label</h3>
         <p>Description</p>
-        <p>
-          <Button bsStyle="primary">Button</Button>&nbsp;
-          <Button bsStyle="default">Button</Button>
-        </p>
       </Thumbnail>
     </Col>
     </Row>

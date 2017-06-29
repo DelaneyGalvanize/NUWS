@@ -1,16 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/lib/Button';
+// import Button from 'react-bootstrap/lib/Button';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon'
 
+
 export default class SplashPage extends React.Component {
 
   render() {
     return (
+
+
       <div className = 'container' >
         <div className="jumbotron">
           <h1> Welcome to Nuws </h1>
@@ -31,9 +34,9 @@ export default class SplashPage extends React.Component {
       </div>
     </div>
     <Grid>
-      <Row>
+      <Row className="splash">
       <Col xs={6} md={4}>
-        <Thumbnail>
+        <Thumbnail className>
           <Glyphicon glyph="envelope"/>
           <h3>Emergency Text</h3>
           <p> You are allowed to enter two emergency contact numbers. When you double click the (black) bar at the top of the NUWS page a text with a message of your choice will be sent to your contacts immediately. Ex. "Come Get me At Home", "Call the Police"</p>

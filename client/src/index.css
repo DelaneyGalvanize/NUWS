@@ -425,3 +425,7 @@ p{
 .thumbnail {
   border: 5px solid #330033;
 }
+
+.newsThumb {
+  border: 1px solid black;
+}

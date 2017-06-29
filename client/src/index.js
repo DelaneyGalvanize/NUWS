@@ -11,11 +11,8 @@ import SignupPage from './components/signupPage.jsx'
 import SplashPage from './components/splashPage.jsx'
 import Navbar from './components/navBar.jsx'
 import Dashboard from './components/dashboard.jsx'
-import Dashboard2 from './components/dashboard2.jsx'
-import Dashboard3 from './components/dashboard3.jsx'
-import Dashboard4 from './components/dashboard4.jsx'
 import Plan from './components/plan.jsx'
-import textMessage from './components/textMessage.jsx'
+
 
 
 
@@ -56,7 +53,6 @@ class App extends React.Component {
             <Route path="/login" render={(props) => <LoginPage onLogin={this.saveToken} />}/>
             <Route path="/dashboard" component={Dashboard}/>
             <Route exact path="/plan" component={Plan}/>
-            <Route path="/textMessage" component={textMessage}/>
           </div>
         </div>
       </Router>
