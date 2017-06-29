@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import Dashboard2 from './dashboard2.jsx'
-import Dashboard3 from './dashboard3.jsx'
-import Dashboard4 from './dashboard4.jsx'
+import Navbar from './navBar.jsx'
+import Button from 'react-bootstrap/lib/Button';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 
 
-export default class Dashboard extends React.Component {
+
+
+export default class Dashboard4 extends React.Component {
   constructor(props) {
     super(props)
 
@@ -23,7 +28,7 @@ export default class Dashboard extends React.Component {
             //method for the HTTP request e.g. GET, POST, ..
             method: 'GET',
             //url is the place where the data lives
-            url: `https://newsapi.org/v1/articles?source=mtv-news&sortBy=latest&apiKey=5724121951714814964cebf967657080`,
+            url: `https://newsapi.org/v1/articles?source=mashable&sortBy=top&apiKey=5724121951714814964cebf967657080`,
             //the format of data you want to get back
             dataType: 'json',
             //stuff that happens if I get the data I want back
@@ -64,7 +69,6 @@ export default class Dashboard extends React.Component {
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
       let pic4= this.state.pic4
-      let pic5 = this.state.pic5
 
       console.log(recent)
 
@@ -85,37 +89,54 @@ export default class Dashboard extends React.Component {
 
 
       return (
-      <div>
-        <Link to="/plan">Plan</Link>
-        <Link to="/textMessage">SMS Text</Link>
-        <div className="container">
-          <div className="news-stories">
-            <h4> carousel of entertainment </h4>
-            {newsList[0]}
-            {newsList2[0]}
-            {newsList3[0]}
-            {newsList4[0]}
-          </div>
-        </div>
-        <div className="container">
-          <div className="news-stories">
-            <h4> Daily News </h4>
-            <Dashboard2></Dashboard2>
-          </div>
-        </div>
-        <div className="container">
-          <div className="news-stories">
-            <h4> Sports </h4>
-            <Dashboard3></Dashboard3>
-          </div>
-        </div>
-        <div className="container">
-          <div className="news-stories">
-            <h4> Trending? </h4>
-            <Dashboard4></Dashboard4>
-          </div>
-        </div>
-    </div>
+      // <div>
+      //   <div className="container">
+      //     <div className="news-stories">
+      //       {newsList[0]}
+      //       {newsList2[0]}
+      //       {newsList3[0]}
+      //       {newsList4[0]}
+      //     </div>
+      //   </div>
+      // </div>
+
+  <Grid>
+    <Row>
+    <Col xs={6} md={4}>
+      <Thumbnail>
+        {newsList[0]}
+        <h3>Thumbnail label</h3>
+        <p>Description</p>
+        <p>
+          <Button bsStyle="primary">Button</Button>&nbsp;
+          <Button bsStyle="default">Button</Button>
+        </p>
+      </Thumbnail>
+    </Col>
+    <Col xs={6} md={4}>
+      <Thumbnail>
+        {newsList2[0]}
+        <h3>Thumbnail label</h3>
+        <p>Description</p>
+        <p>
+          <Button bsStyle="primary">Button</Button>&nbsp;
+          <Button bsStyle="default">Button</Button>
+        </p>
+      </Thumbnail>
+    </Col>
+    <Col xs={6} md={4}>
+      <Thumbnail>
+        {newsList3[0]}
+        <h3>Thumbnail label</h3>
+        <p>Description</p>
+        <p>
+          <Button bsStyle="primary">Button</Button>&nbsp;
+          <Button bsStyle="default">Button</Button>
+        </p>
+      </Thumbnail>
+    </Col>
+    </Row>
+  </Grid>
 
     );
   }

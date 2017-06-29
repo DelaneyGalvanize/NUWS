@@ -13,6 +13,7 @@ import Navbar from './components/navBar.jsx'
 import Dashboard from './components/dashboard.jsx'
 import Dashboard2 from './components/dashboard2.jsx'
 import Dashboard3 from './components/dashboard3.jsx'
+import Dashboard4 from './components/dashboard4.jsx'
 import Plan from './components/plan.jsx'
 import textMessage from './components/textMessage.jsx'
 

@@ -17,7 +17,11 @@
     "morgan": "~1.8.1",
     "node-env-file": "^0.1.8",
     "nodemon": "^1.11.0",
+    "octicons": "^5.0.1",
     "pg": "^6.4.0",
+    "react-bootstrap": "^0.31.0",
+    "react-icons": "^2.2.5",
+    "react-octicon": "^2.0.0",
     "serve-favicon": "~2.4.2",
     "twilio": "^3.4.0"
   }

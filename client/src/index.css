@@ -265,22 +265,6 @@ footer .col-footer.footer-4 {}
 	box-sizing:content-box;
 	-webkit-box-sizing:content-box;
 }
-/*#backTop.white{
-     background:url(../images/uparr-48-b.png) no-repeat center center rgba(255,255,255,0.8);
-    border:1px solid #ccc;
-}
-#backTop.black{
-     background:url(../images/uparr-48-w.png) no-repeat center center rgba(0,0,0,0.8);
-    border:1px solid #ccc;
-}
-#backTop.red{
-     background:url(../images/uparr-48-w.png) no-repeat center center rgba(218,37,29,0.8);
-    border:1px solid #fff;
-}
-#backTop.green{
-     background:url(../images/uparr-48-b.png) no-repeat center center rgba(81,217,187,0.9);
-    border:1px solid #fff;
-}*/
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Contact-------------------------------- */
@@ -421,4 +405,23 @@ a.btn:focus{outline: 0;}
 .signUpBut {
   font-size: 20px;
   color:black;
+}
+
+h3 {
+  text-align: center;
+}
+
+.glyphicon {
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    color: #330033;
+}
+
+p{
+  color:black;
+}
+
+.thumbnail {
+  border: 5px solid #330033;
 }
