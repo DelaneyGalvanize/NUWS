@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build && cd ../server && knex migrate:rollback && knex migrate:latest && knex seed:run;",
+    "nodemon": "node server/app.js"
   },
   "dependencies": {
     "bcrypt-as-promised": "^1.1.0",
