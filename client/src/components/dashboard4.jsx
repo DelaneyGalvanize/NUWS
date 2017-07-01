@@ -36,9 +36,13 @@ export default class Dashboard4 extends React.Component {
                  imageP : result.articles[0].urlToImage,
                  imageP2: result.articles[1].urlToImage,
                  imageP3: result.articles[2].urlToImage,
-                 imageP4: result.articles[3].urlToImage
+                 imageP4: result.articles[3].urlToImage,
+                 title: result.articles[0].title,
+                 title2: result.articles[1].title,
+                 title3: result.articles[2].title,
+                 title4: result.articles[3].title,
                }
-               
+
             },
 
             error: function (err) {
@@ -50,8 +54,12 @@ export default class Dashboard4 extends React.Component {
           stories: userData.articles,
           pic: userData.imageP,
           pic2:userData.imageP2,
-          pic3:userData.imageP3
-          // pic4:userData.imageP4
+          pic3:userData.imageP3,
+          pic4:userData.imageP4,
+          title: userData.title,
+          title2: userData.title2,
+          title3: userData.title3,
+          title4: userData.title4
         })
       })
     }
@@ -65,7 +73,11 @@ export default class Dashboard4 extends React.Component {
       let pic= this.state.pic
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
-      // let pic4= this.state.pic4
+      let pic4= this.state.pic4
+      let title = this.state.title
+      let title2= this.state.title2
+      let title3= this.state.title3
+      let title4= this.state.title4
 
       let newsList=recent.map(function(data) {
         return <img src={pic} width="50%" alt='stories' />
@@ -78,49 +90,42 @@ export default class Dashboard4 extends React.Component {
       let newsList3=recent.map(function(data) {
         return <img src={pic3} width="50%" alt='stories' />
       })
-      // let newsList4=recent.map(function(data) {
-      //   return <img src={pic4} width="50%" alt='stories' />
-
+      let newsList4=recent.map(function(data) {
+        return <img src={pic4} width="50%" alt='stories' />
+})
 
 
       return (
-      // <div>
-      //   <div className="container">
-      //     <div className="news-stories">
-      //       {newsList[0]}
-      //       {newsList2[0]}
-      //       {newsList3[0]}
-      //       {newsList4[0]}
-      //     </div>
-      //   </div>
-      // </div>
 
   <Grid>
     <Row>
-    <Col xs={6} md={3}>
-      <Thumbnail>
+    <Col xs={6} md={3} >
+      <Thumbnail className='trending'>
         {newsList[0]}
-        <h3>Thumbnail label</h3>
-        <p>Description</p>
+        <h5>{title}</h5>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
-      <Thumbnail>
+      <Thumbnail className='trending'>
         {newsList2[0]}
-        <h3>Thumbnail label</h3>
-        <p>Description</p>
+        <h5>{title2}</h5>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
-      <Thumbnail>
+      <Thumbnail className='trending'>
         {newsList3[0]}
-        <h3>Thumbnail label</h3>
-        <p>Description</p>
+        <h5>{title3}</h5>
+      </Thumbnail>
+    </Col>
+    <Col xs={6} md={3}>
+      <Thumbnail className='trending'>
+        {newsList4[0]}
+        <h5>{title4}</h5>
       </Thumbnail>
     </Col>
     </Row>
   </Grid>
 
-    );
+    )
   }
 }

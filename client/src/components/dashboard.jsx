@@ -19,6 +19,7 @@ export default class Dashboard extends React.Component {
     this.state = {
       stories: [],
       pic: '',
+      title: '',
     }
   }
 
@@ -40,8 +41,13 @@ export default class Dashboard extends React.Component {
                  imageP : result.articles[0].urlToImage,
                  imageP2: result.articles[1].urlToImage,
                  imageP3: result.articles[2].urlToImage,
-                 imageP4: result.articles[3].urlToImage
+                 imageP4: result.articles[3].urlToImage,
+                 title: result.articles[0].title,
+                 title2: result.articles[1].title,
+                 title3: result.articles[2].title,
+                 title4: result.articles[3].title,
                }
+               console.log(result)
 
             },
 
@@ -55,7 +61,11 @@ export default class Dashboard extends React.Component {
           pic: userData.imageP,
           pic2:userData.imageP2,
           pic3:userData.imageP3,
-          pic4:userData.imageP4
+          pic4:userData.imageP4,
+          title: userData.title,
+          title2: userData.title2,
+          title3: userData.title3,
+          title4: userData.title4
         })
       })
     }
@@ -70,6 +80,10 @@ export default class Dashboard extends React.Component {
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
       let pic4= this.state.pic4
+      let title = this.state.title
+      let title2= this.state.title2
+      let title3= this.state.title3
+      let title4= this.state.title4
 
       let newsList=recent.map(function(data) {
         return <img src={pic} width="50%" alt='stories' />
@@ -99,22 +113,19 @@ export default class Dashboard extends React.Component {
               <Carousel.Item>
                 {newsList[0]}
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h5>{title}</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList2[0]}
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h5>{title2}</h5>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     {newsList3[0]}
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h5>{title3}</h5>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

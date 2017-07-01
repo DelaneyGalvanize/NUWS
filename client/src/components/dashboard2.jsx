@@ -35,7 +35,11 @@ export default class Dashboard2 extends React.Component {
                  imageP : result.articles[0].urlToImage,
                  imageP2: result.articles[1].urlToImage,
                  imageP3: result.articles[2].urlToImage,
-                 imageP4: result.articles[3].urlToImage
+                 imageP4: result.articles[3].urlToImage,
+                 des:result.articles[0].description,
+                 des2:result.articles[1].description,
+                 des3:result.articles[2].description,
+                 des4:result.articles[3].description
                }
 
             },
@@ -50,7 +54,11 @@ export default class Dashboard2 extends React.Component {
           pic: userData.imageP,
           pic2:userData.imageP2,
           pic3:userData.imageP3,
-          pic4:userData.imageP4
+          pic4:userData.imageP4,
+          des:userData.des,
+          des2:userData.des2,
+          des3:userData.des3,
+          des4:userData.des4
         })
       })
     }
@@ -65,8 +73,12 @@ export default class Dashboard2 extends React.Component {
       let pic2 = this.state.pic2
       let pic3=this.state.pic3
       let pic4= this.state.pic4
+      let des=this.state.des
+      let des2=this.state.des2
+      let des3=this.state.des3
+      let des4=this.state.des4
 
-    
+
 
       let newsList=recent.map(function(data) {
         return <img src={pic} width="50%" alt='stories' />
@@ -85,47 +97,31 @@ export default class Dashboard2 extends React.Component {
 
 
       return (
-    //   <div>
-    //     <div className="container">
-    //       <div className="news-stories">
-    //         {newsList[0]}
-    //         {newsList2[0]}
-    //         {newsList3[0]}
-    //         {newsList4[0]}
-    //       </div>
-    //     </div>
-    // </div>
-    <Grid>
+    <Grid >
       <Row>
       <Col xs={6} md={6}>
-        <Thumbnail>
+        <Thumbnail className="daily">
           {newsList[0]}
-          <h3>Thumbnail label</h3>
-          <p>Description</p>
+          <p>{des}</p>
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
-        <Thumbnail>
+        <Thumbnail className="daily">
           {newsList2[0]}
-          <h3>Thumbnail label</h3>
-          <p>Description</p>
+          <p>{des2}</p>
 
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
-        <Thumbnail>
+        <Thumbnail className="daily">
           {newsList3[0]}
-          <h3>Thumbnail label</h3>
-          <p>Description</p>
-
+          <p>{des3}</p>
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
-        <Thumbnail>
+        <Thumbnail className="daily">
           {newsList4[0]}
-          <h3>Thumbnail label</h3>
-          <p>Description</p>
-
+          <p>{des4}</p>
         </Thumbnail>
       </Col>
       </Row>

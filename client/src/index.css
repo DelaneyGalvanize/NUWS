@@ -31,6 +31,7 @@ a{color:inherit;text-decoration:none}
 }
 
 
+
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
@@ -423,13 +424,21 @@ p{
 }
 
 .thumbnail {
-  border: 3px solid black;
-}
-
-.newsThumb {
   border: 1px solid black;
+  height: 210px;
 }
 
+.daily {
+  height: 260px;
+}
+
+.sports {
+  height: 230px;
+}
+
+.trending {
+  height: 235px;
+}
 .carousel {
   width:640px;
   height:360px;
