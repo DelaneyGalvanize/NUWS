@@ -7,7 +7,10 @@ import Dashboard4 from './dashboard4.jsx'
 import AudioRecorder from './recorder/AudioRecorder.jsx'
 import Sms from './sms.jsx'
 import Carousel from 'react-bootstrap/lib/Carousel'
-// import Caption from 'react-bootstrap/lib/Caption'
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 
 
 
@@ -86,52 +89,80 @@ export default class Dashboard extends React.Component {
       let title4= this.state.title4
 
       let newsList=recent.map(function(data) {
-        return <img src={pic} width="50%" alt='stories' />
+        return <img src={pic} />
       })
 
       let newsList2=recent.map(function(data) {
-        return <img src={pic2} width="50%" alt='stories' />
+        return <img src={pic2}  />
       })
 
       let newsList3=recent.map(function(data) {
-        return <img src={pic3} width="50%" alt='stories' />
+        return <img src={pic3}  />
       })
       let newsList4=recent.map(function(data) {
-        return <img src={pic4} width="50%" alt='stories' />
+        return <img src={pic4}  />
       })
 
 
       return (
       <div>
-        <Link to="/plan">Plan</Link>
+        {/* <Link to="/plan">Plan</Link>
         <AudioRecorder></AudioRecorder>
-        <Sms></Sms>
+        <Sms></Sms> */}
+        <h4> Top Entertainment</h4>
         <div className="container">
 
-
+          <Grid>
+            <Row>
+            <Col xs={6} md={6}>
             <Carousel>
               <Carousel.Item>
                 {newsList[0]}
-                <Carousel.Caption>
-                  <h5>{title}</h5>
-                </Carousel.Caption>
+                <h5>{title}</h5>
+
               </Carousel.Item>
               <Carousel.Item>
                 {newsList2[0]}
-    <Carousel.Caption>
-      <h5>{title2}</h5>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    {newsList3[0]}
-    <Carousel.Caption>
-      <h5>{title3}</h5>
-    </Carousel.Caption>
-  </Carousel.Item>
+                <h5>{title2}</h5>
+              </Carousel.Item>
+              <Carousel.Item>
+                {newsList3[0]}
+                <h5>{title3}</h5>
+              </Carousel.Item>
+              <Carousel.Item>
+                {newsList4[0]}
+                <h5>{title4}</h5>
+              </Carousel.Item>
 </Carousel>
+</Col>
 
 
+<Col xs={6} md={6}>
+  <Col xs={6} md={6}>
+    <Thumbnail className='store' src="https://sanctuaryofstyle.files.wordpress.com/2012/01/nordstrom-rack-logo.jpg"  >
+    </Thumbnail>
+  </Col>
+
+  <Col xs={6} md={6}>
+    <Thumbnail  className='store' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg"  >
+    </Thumbnail>
+  </Col>
+
+  <Col xs={6} md={6}>
+    <Thumbnail  src="   https://seeklogo.com/images/P/pinterest-icon-logo-D4965B6748-seeklogo.com.gif" className="store" >
+    </Thumbnail>
+  </Col>
+
+  <Col xs={6} md={6}>
+    <Thumbnail  src="https://www.cuckooforcoupondeals.com/wp-content/uploads/2015/01/Ben-Jerrys-COupon.png" className='store'>
+    </Thumbnail>
+  </Col>
+
+  </Col>
+  </Row>
+</Grid>
         </div>
+
         <div className="container">
           <div className="news-stories">
             <h4> Daily News </h4>
@@ -146,7 +177,7 @@ export default class Dashboard extends React.Component {
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> Trending? </h4>
+            <h4> Trending </h4>
             <Dashboard4></Dashboard4>
           </div>
         </div>

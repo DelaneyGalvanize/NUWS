@@ -44,8 +44,9 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="login-html index-page">
+      <div className="wrapper login">
+        <div className="form-signin">
+          <h2 class="form-signin-heading">Please login</h2>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email address</label>

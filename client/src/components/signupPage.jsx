@@ -44,8 +44,10 @@ export default class SignupPage extends React.Component {
   render() {
     return (
 
-      <div className="container">
-        <div className="login-html index-page">
+      <div className="container wrapper">
+        <div className="form-signin">
+          <h2 class="form-signin-heading">Welcome to Nuws!</h2>
+
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email address</label>
@@ -55,7 +57,7 @@ export default class SignupPage extends React.Component {
             <label>Password</label>
             <input type="password" value={this.state.password} onChange={this.handleChangePassword} className="form-control" placeholder="Password" />
           </div>
-          <button type="submit" className="btn btn-default">Log In</button>
+          <button type="submit" className="btn btn-default">Sign Up!</button>
         </form>
       </div>
     </div>

@@ -81,18 +81,18 @@ export default class Dashboard2 extends React.Component {
 
 
       let newsList=recent.map(function(data) {
-        return <img src={pic} width="50%" alt='stories' />
+        return <img src={pic} width="100%" alt='stories' />
       })
 
       let newsList2=recent.map(function(data) {
-        return <img src={pic2} width="50%" alt='stories' />
+        return <img src={pic2} width="100%" alt='stories' />
       })
 
       let newsList3=recent.map(function(data) {
-        return <img src={pic3} width="50%" alt='stories' />
+        return <img src={pic3} width="100%" alt='stories' />
       })
       let newsList4=recent.map(function(data) {
-        return <img src={pic4} width="50%" alt='stories' />
+        return <img src={pic4} width="100%" alt='stories' />
       })
 
 
