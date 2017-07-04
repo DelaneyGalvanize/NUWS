@@ -42,6 +42,10 @@ export default class Dashboard3 extends React.Component {
                  title2: result.articles[1].title,
                  title3: result.articles[2].title,
                  title4: result.articles[3].title,
+                 linked: result.articles[0].url,
+                 link2: result.articles[1].url,
+                 link3: result.articles[2].url,
+                 link4: result.articles[3].url
                }
 
             },
@@ -61,6 +65,10 @@ export default class Dashboard3 extends React.Component {
           title2: userData.title2,
           title3: userData.title3,
           title4: userData.title4,
+          linked: userData.linked,
+          link2: userData.link2,
+          link3: userData.link3,
+          link4: userData.link4
         })
       })
     }
@@ -79,22 +87,26 @@ export default class Dashboard3 extends React.Component {
       let title2= this.state.title2
       let title3= this.state.title3
       let title4= this.state.title4
+      let linked= this.state.linked
+      let link2= this.state.link2
+      let link3= this.state.link3
+      let link4= this.state.link4
 
 
 
       let newsList=recent.map(function(data) {
-        return <img src={pic} width="100%"  />
+        return <img src={pic}   />
       })
 
       let newsList2=recent.map(function(data) {
-        return <img src={pic2} width="100%"  />
+        return <img src={pic2}  />
       })
 
       let newsList3=recent.map(function(data) {
-        return <img src={pic3} width="100%"  />
+        return <img src={pic3}  />
       })
       let newsList4=recent.map(function(data) {
-        return <img src={pic4} width="100%"  />
+        return <img src={pic4}   />
       })
 
 
@@ -104,7 +116,7 @@ export default class Dashboard3 extends React.Component {
       <Col xs={6} md={3}>
         <Thumbnail className="sports">
           {newsList[0]}
-          <h5>{title}</h5>
+        <div><a href={linked}>{title}</a></div>
 
 
         </Thumbnail>
@@ -112,7 +124,7 @@ export default class Dashboard3 extends React.Component {
       <Col xs={6} md={3}>
         <Thumbnail className="sports">
           {newsList2[0]}
-          <h5>{title2}</h5>
+          <div><a href={link2}>{title2}</a></div>
 
 
         </Thumbnail>
@@ -120,7 +132,7 @@ export default class Dashboard3 extends React.Component {
       <Col xs={6} md={3}>
         <Thumbnail className="sports">
           {newsList3[0]}
-          <h5>{title3}</h5>
+          <div><a href={link3}>{title3}</a></div>
 
 
         </Thumbnail>
@@ -128,7 +140,7 @@ export default class Dashboard3 extends React.Component {
       <Col xs={6} md={3}>
         <Thumbnail className="sports">
           {newsList4[0]}
-          <h5>{title4}</h5>
+        <div><a href={link4}>{title4}</a></div>
 
 
         </Thumbnail>

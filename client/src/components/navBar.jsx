@@ -33,7 +33,8 @@ class Navbar extends React.Component {
     else {
       signOutButton = (
         <li role="presentation">
-          <a href="#" onClick={this.signOutFunc}>Sign Out</a>
+          <a onClick={this.signOutFunc}>Sign Out</a>
+          {/* href="#"  */}
         </li>
       )
     }

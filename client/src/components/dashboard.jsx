@@ -4,6 +4,8 @@ import $ from 'jquery';
 import Dashboard2 from './dashboard2.jsx'
 import Dashboard3 from './dashboard3.jsx'
 import Dashboard4 from './dashboard4.jsx'
+import Dashboard5 from './dashboard5.jsx'
+import Dashboard6 from './dashboard6.jsx'
 import AudioRecorder from './recorder/AudioRecorder.jsx'
 import Sms from './sms.jsx'
 import Carousel from 'react-bootstrap/lib/Carousel'
@@ -11,6 +13,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
+
 
 
 
@@ -49,6 +52,11 @@ export default class Dashboard extends React.Component {
                  title2: result.articles[1].title,
                  title3: result.articles[2].title,
                  title4: result.articles[3].title,
+                 linked: result.articles[0].url,
+                 link2: result.articles[1].url,
+                 link3: result.articles[2].url,
+                 link4: result.articles[3].url
+
                }
                console.log(result)
 
@@ -68,7 +76,12 @@ export default class Dashboard extends React.Component {
           title: userData.title,
           title2: userData.title2,
           title3: userData.title3,
-          title4: userData.title4
+          title4: userData.title4,
+          linked: userData.linked,
+          link2: userData.link2,
+          link3: userData.link3,
+          link4: userData.link4
+
         })
       })
     }
@@ -87,6 +100,10 @@ export default class Dashboard extends React.Component {
       let title2= this.state.title2
       let title3= this.state.title3
       let title4= this.state.title4
+      let linked= this.state.linked
+      let link2= this.state.link2
+      let link3= this.state.link3
+      let link4= this.state.link4
 
       let newsList=recent.map(function(data) {
         return <img src={pic} />
@@ -106,9 +123,9 @@ export default class Dashboard extends React.Component {
 
       return (
       <div>
-        {/* <Link to="/plan">Plan</Link>
+        <Link to="/plan">Plan</Link>
         <AudioRecorder></AudioRecorder>
-        <Sms></Sms> */}
+        <Sms></Sms>
         <h4> Top Entertainment</h4>
         <div className="container">
 
@@ -118,20 +135,20 @@ export default class Dashboard extends React.Component {
             <Carousel>
               <Carousel.Item>
                 {newsList[0]}
-                <h5>{title}</h5>
-
+                {/* <h5>{title}</h5> */}
+                <div><a href={linked}>{title}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList2[0]}
-                <h5>{title2}</h5>
+                  <div><a href={link2}>{title2}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList3[0]}
-                <h5>{title3}</h5>
+                  <div><a href={link3}>{title3}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList4[0]}
-                <h5>{title4}</h5>
+                  <div><a href={link4}>{title4}</a></div>
               </Carousel.Item>
 </Carousel>
 </Col>
@@ -149,7 +166,7 @@ export default class Dashboard extends React.Component {
   </Col>
 
   <Col xs={6} md={6}>
-    <Thumbnail  src="   https://seeklogo.com/images/P/pinterest-icon-logo-D4965B6748-seeklogo.com.gif" className="store" >
+    <Thumbnail  src="https://seeklogo.com/images/P/pinterest-icon-logo-D4965B6748-seeklogo.com.gif" className="store" >
     </Thumbnail>
   </Col>
 
@@ -171,16 +188,41 @@ export default class Dashboard extends React.Component {
         </div>
         <div className="container">
           <div className="news-stories">
+            <h4> Trending </h4>
+            <Dashboard4></Dashboard4>
+          </div>
+        </div>
+        <div className="container">
+          <div className="news-stories">
             <h4> Sports </h4>
             <Dashboard3></Dashboard3>
           </div>
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> Trending </h4>
-            <Dashboard4></Dashboard4>
+            <h4> Technology </h4>
+            <Dashboard5></Dashboard5>
           </div>
         </div>
+        <div className="container">
+          <div className="news-stories">
+            <h4> More Entertainment</h4>
+            <Dashboard6></Dashboard6>
+          </div>
+        </div>
+
+
+        {/* <footer>
+        <div className="container text-center">
+          <div className="row">
+            <div className="col-md-5">
+              <li>&copy; 2017</li>
+              <li><Link to="contactus">Contact Us</Link></li>
+              <li><Link to="about">About</Link></li>
+            </div>
+          </div>
+        </div>
+    </footer> */}
     </div>
 
 

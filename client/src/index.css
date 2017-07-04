@@ -19,6 +19,9 @@ body {
 	background: #eee !important;
 }
 
+h5 {
+  text-align: center;
+}
 .wrapper {
 	margin-top: 80px;
   margin-bottom: 80px;
@@ -512,6 +515,20 @@ h5{
   box-shadow: 1px 1px 1px 1px;
 }
 
+.tech {
+  box-shadow: 1px 1px 1px 1px;
+  height: 300px;
+}
+
+.entertainment {
+  height: 280px;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.coups {
+  margin-bottom: 30px;
+}
+
 .carousel {
   /*width:640px;*/
   height:460px;
@@ -519,8 +536,8 @@ h5{
   box-shadow: 2px 2px 2px 2px;
 }
 
-.carousel.caption {
-  text:black;
+.carousel-indicators {
+  margin-bottom: 50px;
 }
 
 .jumbotron {
