@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var users = require('./routes/users');
 var tokens = require('./routes/tokens');
 var sms= require('./routes/sendsms')
-var plan=require('./routes/plans')
+// var plan=require('./routes/plans')
 
 
 var app = express();
@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, '/client/build')));
 app.use('/api/users', users);
 app.use('/api/tokens', tokens);
 app.use('/api/sendsms', sms)
-app.use('/api/plans', plan)
+// app.use('/api/plans', plan)
 
 
 // app.get('*', (req, res) => {
@@ -39,7 +39,7 @@ app.use('/api/plans', plan)
 // });
 
 app.use('*', function(req, res) {
-  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
+  res.sendFile(path.resolve(__dirname, '/client/build', 'index.html'))
 })
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
