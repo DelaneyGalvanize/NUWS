@@ -52,8 +52,8 @@ export default class AudioRecorder extends React.Component<AudioRecorderProps, A
     filename: 'output.wav',
     playLabel: '🔊 Play',
     playingLabel: '❚❚ Playing',
-    recordLabel: '● Record',
-    recordingLabel: '● Recording',
+    recordLabel: '● ',
+    recordingLabel: '● ',
     removeLabel: '✖ Remove',
     downloadLabel: '\ud83d\udcbe Save' // unicode floppy disk
   };

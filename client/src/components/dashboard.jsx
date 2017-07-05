@@ -13,6 +13,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
+import Button from 'react-bootstrap/lib/Button';
 
 
 
@@ -123,7 +124,6 @@ export default class Dashboard extends React.Component {
 
       return (
       <div>
-        <Link to="/plan">Plan</Link>
         <AudioRecorder></AudioRecorder>
         <Sms></Sms>
         <h4> Top Entertainment</h4>
@@ -161,8 +161,8 @@ export default class Dashboard extends React.Component {
   </Col>
 
   <Col xs={6} md={6}>
-    <Thumbnail  className='store' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg"  >
-    </Thumbnail>
+    <Thumbnail  className='store AudioRecorder' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg" onClick={this.props.onClick} >
+  </Thumbnail>
   </Col>
 
   <Col xs={6} md={6}>
@@ -211,18 +211,18 @@ export default class Dashboard extends React.Component {
           </div>
         </div>
 
+        <footer>
+          		<div class="wrap-footer">
+          			<div class="container">
+          				<div class="row">
 
-        {/* <footer>
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-md-5">
-              <li>&copy; 2017</li>
-              <li><Link to="contactus">Contact Us</Link></li>
-              <li><Link to="about">About</Link></li>
-            </div>
-          </div>
-        </div>
-    </footer> */}
+          					<div class="col-md-3 col-footer footer-4">
+                      <Link to="/plan" className='footer'><h4>© 2017 Nuws Development Group</h4></Link>
+          					</div>
+          				</div>
+          			</div>
+          		</div>
+          	</footer>
     </div>
 
 

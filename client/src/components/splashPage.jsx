@@ -29,31 +29,43 @@ export default class SplashPage extends React.Component {
     </div>
       </div>
 
-  <div className="jumbotron middle ">
+  <div className="jumbotron">
     <Grid>
-        <Row>
+   <Row>
+   <Col xs={6} md={6}>
+     <Thumbnail>
+       <br></br>
+       <h3>Every minute 20 people are victims of intimiate partner violence</h3>
 
-  <Col xs={6} md={4}>
-  <Image className='circle' src="https://www.newton.ac.uk/files/covers/968361.jpg" circle/>
-  </Col>
-  {/* <Col xs={6} md={4}>
-    <h1> You are not alone </h1>
-  </Col> */}
-  <Col xs={6} md={4}>
-  <Image className='circle' src="https://www.newton.ac.uk/files/covers/968361.jpg" circle />
-  </Col>
-  <Col xs={6} md={4}>
-  <Image className='circle' src="https://www.newton.ac.uk/files/covers/968361.jpg" circle/>
-  </Col>
-  {/* <Col xs={6} md={4}>
-    <h1> You are not alone </h1>
-  </Col> */}
-  <Col xs={6} md={6}>
-  <Image className='circle circle4' src="https://www.newton.ac.uk/files/covers/968361.jpg" circle />
-  </Col>
-  <Col xs={6} md={6}>
-  <Image className='circle' src="https://www.newton.ac.uk/files/covers/968361.jpg" circle />
-  </Col>
+     </Thumbnail>
+   </Col>
+   <Col xs={6} md={6}>
+     <Thumbnail>
+       <h1>1 in 4</h1>
+       <h5>The number of women who will be victims of severe violence by an intimate partner in their lifetimes.</h5>
+
+     </Thumbnail>
+   </Col>
+   </Row>
+ </Grid>
+ <Grid>
+<Row>
+<Col xs={6} md={6}>
+  <Thumbnail>
+  <h1>THREE</h1>
+    <h5>The number of women murdered every day by a current or former male partner in the U.S.</h5>
+
+
+  </Thumbnail>
+</Col>
+<Col xs={6} md={6}>
+  <Thumbnail>
+    <h1>4,774,000</h1>
+    <h5>The number of women in the U.S. who experience physical violence by an intimate partner every year.</h5>
+
+
+  </Thumbnail>
+</Col>
 </Row>
 </Grid>
 </div>
@@ -67,6 +79,7 @@ export default class SplashPage extends React.Component {
 </div>
 </div>
 </div>
+
   <div className="jumbotron">
     <Grid>
       <Row >
@@ -81,14 +94,14 @@ export default class SplashPage extends React.Component {
         <Thumbnail className="splash">
           <Glyphicon glyph="th-list" />
           <h3>Escape Plan</h3>
-          <p>At the bottom of the NUWS page, a disguised 'Copyright' button that when clicked on will take you to a page that will help plan YOUR escape. Don't worry if you need to exit the page quickly, just hit the 'Home' button to immediately go back to the NUWS page!</p>
+          <p>At the bottom of the NUWS page, a disguised 'Copyright' button that when clicked on will take you to a page that will help plan YOUR escape. Don't worry if you need to exit the page quickly, just hit the 'Save' button to immediately go back to the NUWS page!</p>
         </Thumbnail>
       </Col>
       <Col xs={6} md={4}>
         <Thumbnail className="splash">
           <Glyphicon glyph="heart" />
           <h3>Recording</h3>
-          <p>I am hoping there will be a chat feature. Or I want to be able to save the emergency Plan to a CSV. RECORDING DEVICE??? YES do this first before the chat feature. You're not alone. Blah blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah</p>
+          <p>The period "." in the NUWS logo on the "nuws" page is a secret recorder. At any moment you can click that button and begin recording a conversation that you can show the police or family member, etc. You have the option to save and delete the recording.</p>
         </Thumbnail>
       </Col>
       </Row>
