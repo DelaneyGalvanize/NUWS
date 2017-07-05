@@ -14,6 +14,7 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Button from 'react-bootstrap/lib/Button';
+import Breadcrumb from 'react-bootstrap/lib/Breadcrumb';
 
 
 
@@ -124,6 +125,17 @@ export default class Dashboard extends React.Component {
 
       return (
       <div>
+        <Breadcrumb>
+    <Breadcrumb.Item href="#">
+      Home
+    </Breadcrumb.Item>
+    <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs">
+      Library
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active>
+      Data
+    </Breadcrumb.Item>
+  </Breadcrumb>
         <AudioRecorder></AudioRecorder>
         <Sms></Sms>
         <h4> Top Entertainment</h4>
@@ -161,7 +173,7 @@ export default class Dashboard extends React.Component {
   </Col>
 
   <Col xs={6} md={6}>
-    <Thumbnail  className='store AudioRecorder' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg" onClick={this.props.onClick} >
+    <Thumbnail  className='store' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg" >
   </Thumbnail>
   </Col>
 

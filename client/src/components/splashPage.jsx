@@ -21,7 +21,7 @@ export default class SplashPage extends React.Component {
         <div className="jumbotron">
           <div id="page-content">
       <div className="box-content  box-2  box-style-2 box-shadow">
-        <h1> Nuws. </h1>
+        <h1> Welcome to Nuws. </h1>
         <h2>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
         <br></br>
         <br></br>

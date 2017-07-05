@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
+// import AudioRecorder from './recorder/AudioRecorder.jsx'
 
 class Navbar extends React.Component {
   constructor() {
@@ -51,7 +52,7 @@ class Navbar extends React.Component {
             {signOutButton}
           </ul>
         </nav>
-        <h2 className="text-muted">Nuws.</h2>
+        <h2 className="text-muted">Nuws</h2>
       </div>
     )
   }
