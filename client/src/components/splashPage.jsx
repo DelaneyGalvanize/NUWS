@@ -21,7 +21,7 @@ export default class SplashPage extends React.Component {
         <div className="jumbotron">
           <div id="page-content">
       <div className="box-content  box-2  box-style-2 box-shadow">
-        <h1> Nuws </h1>
+        <h1> Nuws. </h1>
         <h2>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
         <br></br>
         <br></br>
@@ -35,7 +35,7 @@ export default class SplashPage extends React.Component {
    <Col xs={6} md={6}>
      <Thumbnail>
        <br></br>
-       <h3>Every minute 20 people are victims of intimiate partner violence</h3>
+       <h3>Every minute, 20 people are victims of intimate partner violence</h3>
 
      </Thumbnail>
    </Col>

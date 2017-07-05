@@ -49,7 +49,7 @@ class LoginPage extends React.Component {
           <h2 class="form-signin-heading">Please login</h2>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Email address</label>
+            <label>Username</label>
             <input type="email" value={this.state.email} onChange={this.handleChangeEmail} className="form-control" placeholder="Email" />
           </div>
           <div className="form-group">

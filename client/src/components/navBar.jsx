@@ -51,7 +51,7 @@ class Navbar extends React.Component {
             {signOutButton}
           </ul>
         </nav>
-        <h2 className="text-muted">Nuws</h2>
+        <h2 className="text-muted">Nuws.</h2>
       </div>
     )
   }

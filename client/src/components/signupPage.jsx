@@ -50,12 +50,24 @@ export default class SignupPage extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Email address</label>
+            <label>Username</label>
             <input type="email" value={this.state.email} onChange={this.handleChangeEmail} className="form-control" placeholder="Email" />
           </div>
           <div className="form-group">
             <label>Password</label>
             <input type="password" value={this.state.password} onChange={this.handleChangePassword} className="form-control" placeholder="Password" />
+          </div>
+            <div className="form-group">
+              <label>Emergency Contact Number 1</label>
+              <input type="text" className="form-control" placeholder="Emergency Contact 1" />
+            </div>
+              <div className="form-group">
+                <label>Emergency Contact Number 2 (Optional)</label>
+                <input type="text" className="form-control" placeholder="Emergency Contact 2" />
+              </div>
+                <div className="form-group">
+                  <label>Emergency Message</label>
+                  <input type="text"  className="form-control" placeholder="Please Come Get Me" />
           </div>
           <button type="submit" className="btn btn-default">Sign Up!</button>
         </form>
