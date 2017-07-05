@@ -27,6 +27,7 @@ app.use(cookieParser());
 // Serve static files from the React app
 // https://daveceddia.com/create-react-app-express-production/
 app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static(path.join(__dirname, '../', 'node_modules')))
 
 // app.use('/', index);
 app.use('/api/users', users);
@@ -38,10 +39,13 @@ app.use('/api/plans', plan)
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 // https://daveceddia.com/create-react-app-express-production/
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname+'/client/build/index.html'));
+// });
 
+app.use('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
