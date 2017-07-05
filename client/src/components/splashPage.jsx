@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Image from 'react-bootstrap/lib/Image'
+import LoginPage from './loginPage.jsx'
 
 
 
@@ -18,11 +19,11 @@ export default class SplashPage extends React.Component {
 
 
       <div className='container'>
-        <div className="jumbotron">
+        <div className="jumbotron head">
           <div id="page-content">
       <div className="box-content  box-2  box-style-2 box-shadow">
-        <h1> Welcome to Nuws. </h1>
-        <h2>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
+        <h1 className='stat heads'> Welcome to Nuws. </h1>
+        <h2 className='stat heads'>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
         <br></br>
         <br></br>
       </div>
@@ -33,16 +34,16 @@ export default class SplashPage extends React.Component {
     <Grid>
    <Row>
    <Col xs={6} md={6}>
-     <Thumbnail>
+     <Thumbnail className='splashstat'>
        <br></br>
-       <h3>Every minute, 20 people are victims of intimate partner violence</h3>
+       <h3 className='stat'>Every minute, TWENTY people are victims of intimate partner violence</h3>
 
      </Thumbnail>
    </Col>
    <Col xs={6} md={6}>
-     <Thumbnail>
-       <h1>1 in 4</h1>
-       <h5>The number of women who will be victims of severe violence by an intimate partner in their lifetimes.</h5>
+     <Thumbnail className='splashstat'>
+       <h1 className='stat'>1 in 4</h1>
+       <h5 className='stat'>The number of women who will be victims of severe violence by an intimate partner in their lifetimes.</h5>
 
      </Thumbnail>
    </Col>
@@ -51,17 +52,17 @@ export default class SplashPage extends React.Component {
  <Grid>
 <Row>
 <Col xs={6} md={6}>
-  <Thumbnail>
-  <h1>THREE</h1>
-    <h5>The number of women murdered every day by a current or former male partner in the U.S.</h5>
+  <Thumbnail className='splashstat'>
+  <h1 className='stat'>THREE</h1>
+    <h5 className='stat'>The number of women murdered every day by a current or former male partner in the U.S.</h5>
 
 
   </Thumbnail>
 </Col>
 <Col xs={6} md={6}>
-  <Thumbnail>
-    <h1>4,774,000</h1>
-    <h5>The number of women in the U.S. who experience physical violence by an intimate partner every year.</h5>
+  <Thumbnail className='splashstat'>
+    <h1 className='stat'>4,774,000</h1>
+    <h5 className='stat'>The number of women in the U.S. who experience physical violence by an intimate partner every year.</h5>
 
 
   </Thumbnail>
@@ -73,8 +74,12 @@ export default class SplashPage extends React.Component {
 <div className="jumbotron splic">
   <div id="page-content">
 <div className="box-content box-2 container box-style-3 box-shadow">
-  <h1> If your current relationship has shown signs of abuse, we want to help you get out.</h1>
+  <br></br>
+  <br></br>
+  <h1 className='stat'> If your current relationship has shown signs of abuse, we want to help you get out.</h1>
   <div className="row">
+      <br></br>
+      <br></br>
   </div>
 </div>
 </div>
@@ -111,7 +116,18 @@ export default class SplashPage extends React.Component {
             <Link to="/signup" className="btn btn-lg btn-success" href="#" role="button">Sign Up</Link>
           </p> */}
 </div>
+<footer>
+      <div className="wrap-footer">
+        <div className="container">
+          <div className="row">
 
+            <div className="col-md-3 col-footer footer-4">
+              <div className='footer'>© 2017 Nuws Development Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
         </div>
 
 

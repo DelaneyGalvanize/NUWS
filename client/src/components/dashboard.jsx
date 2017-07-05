@@ -15,6 +15,7 @@ import Col from 'react-bootstrap/lib/Col';
 import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Button from 'react-bootstrap/lib/Button';
 import Breadcrumb from 'react-bootstrap/lib/Breadcrumb';
+import Navbar from './navBar.jsx'
 
 
 
@@ -124,7 +125,9 @@ export default class Dashboard extends React.Component {
 
 
       return (
+
       <div>
+      
         <Breadcrumb>
     <Breadcrumb.Item href="#">
       Home

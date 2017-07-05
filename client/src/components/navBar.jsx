@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 // import AudioRecorder from './recorder/AudioRecorder.jsx'
+import Button from 'react-bootstrap/lib/Button';
 
 class Navbar extends React.Component {
   constructor() {
@@ -22,12 +23,12 @@ class Navbar extends React.Component {
     if (!this.props.loggedIn) {
       signUpButton = (
         <li role="presentation">
-          <Link to="/signup">Sign Up</Link>
+          <Button><Link to="/signup">Sign Up</Link></Button>
         </li>
       )
       logInButton = (
         <li role="presentation">
-          <Link to="/login">Log In</Link>
+          <Button><Link to="/login">Log In</Link></Button>
         </li>
       )
     }
@@ -52,7 +53,7 @@ class Navbar extends React.Component {
             {signOutButton}
           </ul>
         </nav>
-        <h2 className="text-muted">Nuws</h2>
+        {/* <h2 className="text-muted">Nuws</h2> */}
       </div>
     )
   }

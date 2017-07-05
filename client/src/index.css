@@ -219,7 +219,7 @@ header a.logo img{min-height: 70px; margin-left: 0; height: 136px; width: 136px;
 .box-content {margin-bottom: 40px;}
 
 /*.box-content.box-style-1{background: url(./images/box-style-1.jpg) no-repeat fixed 100% 100%; }*/
-.box-content.box-style-2{background: url(./images/meadow.jpg) no-repeat fixed 50% 100%; }
+.box-content.box-style-2{background: url(./images/pattern.jpg) no-repeat fixed 50% 100%; }
 .box-content.box-style-3{background: url(./images/meadow.jpg) no-repeat fixed 50% 100%; }
 
 .box-style-2 {
@@ -471,6 +471,7 @@ h5{
 .splash {
   height: 390px;
   box-shadow: 1px 1px 1px 1px;
+
 }
 .daily {
   height: 450px;
@@ -539,9 +540,29 @@ h5{
 }
 
 .splic {
-  margin-bottom: 15px;
+  margin:10px;
 }
 
 .plan {
   border:2px solid black
+}
+
+/*splash page*/
+.splashstat {
+  box-shadow: 1px 2px 1px 2px;
+  margin: 0px;
+
+}
+
+.stat{
+    /*font-family: 'Bellefair', serif;*/
+    font-family: 'Kurale', serif;
+}
+
+.head {
+  margin: 10px;
+}
+
+.heads {
+
 }
