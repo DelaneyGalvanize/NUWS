@@ -27,7 +27,7 @@ app.use(cookieParser());
 // Serve static files from the React app
 // https://daveceddia.com/create-react-app-express-production/
 app.use(express.static(path.join(__dirname, '/client/build')));
-app.use(express.static(path.join(__dirname, '../', 'node_modules')))
+app.use(express.static(path.join(__dirname, '/../', 'node_modules')))
 
 // app.use('/', index);
 app.use('/api/users', users);
