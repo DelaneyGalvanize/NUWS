@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, '/client/build')));
-app.use(express.static(path.join(__dirname, '/../', 'node_modules')))
+app.use(express.static(path.join(__dirname, './', 'node_modules')))
 
 
 app.use('/api/users', users);
