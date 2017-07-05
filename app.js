@@ -26,8 +26,7 @@ app.use(cookieParser());
 
 // app.use(express.static(path.join(__dirname, '/client/build')));
 // app.use(express.static(path.join(__dirname, './', 'node_modules')))
-// app.use(express.static(path.resolve(__dirname, '/client/build')));
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, '/client/build')));
 
 app.use('/api/users', users);
 app.use('/api/tokens', tokens);
@@ -40,7 +39,7 @@ app.use('/api/sendsms', sms)
 // });
 
 app.use('*', function(req, res) {
-  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'))
+  res.sendFile(path.resolve(__dirname, '/client/build', 'index.html'))
 })
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

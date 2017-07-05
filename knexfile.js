@@ -5,7 +5,11 @@ module.exports = {
     "client": 'pg',
     "connection": 'postgres://localhost/nuwsapp_dev'
   },
-  "test": 'postgres://localhost/nuwsapp_test',
+
+  "test": {
+  "client": 'pg',
+  "connection":'postgres://localhost/nuwsapp_test'
+},
 
   "production": {
     "client": 'pg',
