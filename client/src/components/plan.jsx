@@ -184,10 +184,11 @@ export default class Plan extends React.Component {
 
                   <p> The following steps can help plan for and increase your safety and prepare for the possibility of potential violence. Although you do not have control over your partner's violence, you do have a choice about how to respond to him/her and how
                       to best get yourself and your children to safety.</p>
-                      
+                      <form>
+<div className="plan">
                           <p> Step 1: SAFETY DURING A VIOLENT INCIDENT. Women cannot always avoid violent incidents. In order to increase safety, battered women may use a variety of strategies.</p>
                           <p>I can use some or all of the following strategies: </p>
-      <form>
+
         <label>
           If I decide to leave, I will:
           <input
@@ -258,14 +259,14 @@ export default class Plan extends React.Component {
             (Try to avoid arguments in the bathroom, garage, kitchen, near weapons or in rooms without access to an outside door).
         </label>
         <label>I will use my judgment and intuition. If the situation is very serious, I can give my partner what he/she wants to calm him/her down. I have to protect myself until I/we are out of danger. </label>
-      </form>
-
-
+</div>
+<br></br>
+<div className="plan">
       <p>Step 2: SAFETY WHEN PREPARING TO LEAVE. Battered women frequently leave the residence they share with the battering partner. Leaving must be done with a careful plan in order to increase safety. Batterers often strike back when
                             they believe that a battered woman is leaving the relationship. </p>
       <p>I can use some or all the following safety strategies: </p>
 
-      <form>
+
         <label>
           I will leave money and an extra set of keys with
           <input
@@ -284,6 +285,7 @@ export default class Plan extends React.Component {
             value={this.state.extra_docs}
             onChange={this.handleInput9Change} />
         </label>
+
         <p>Other things I can do to increase my independence include: </p>
       <label>I can keep change for phone calls on me at all times. I understand that if I use my telephone credit card, the following month the telephone bill will tell my batterer those numbers that I called after I left. To keep my telephone
                                 communications confidential, I must either use coins or I might get a friend to permit me to use their telephone credit card for a limited time when I first leave. </label>
@@ -328,7 +330,9 @@ export default class Plan extends React.Component {
         </label>
 
         <label>I will rehearse my escape plan and, as appropriate, practice it with my children.</label>
-
+      </div>
+      <br></br>
+        <div className="plan">
         <p>Step 3: SAFETY AND DRUG OR ALCOHOL USE. Most people in this culture use alcohol. Many use mood-altering drugs. Much of this use is legal and some is not. The legal outcomes of using illegal drugs can be very hard on a battered woman, may hurt
             her relationship with her children and put her at a disadvantage in other legal actions with her battering partner. Therefore, women should carefully consider the potential cost of the use of illegal drugs. But beyond this, the use of any
             alcohol or other drug can reduce a woman's awareness and ability to act quickly to protect herself from her battering partner. Furthermore, the use of alcohol or other drugs by the batterer may give him/her an excuse to use violence. Therefore,
@@ -381,7 +385,9 @@ export default class Plan extends React.Component {
             value={this.state.protect_two}
             onChange={this.handleInput18Change} />
         </label>
-
+      </div>
+<br></br>
+    <div className="plan">
         <p>Items with asterisks on the following list are the most important to take. If there is time, the other items might be taken, or stored outside the home. These items might be placed in one location, so that if we have to leave in a hurry, I can
                     grab them quickly.
                      When I leave, I should have:</p>
@@ -406,10 +412,13 @@ export default class Plan extends React.Component {
                         <li>Children's favorite toys and/or blankets</li>
                         <li>Items of special sentimental value</li>
                     </ul>
+                  </div>
+                  <br></br>
+                  <div className="plan">
                     <ul>
                       <li>
                     <label>
-                  State police:
+                  State police
                       <input
                         name="state_police"
                         type="text"
@@ -420,7 +429,7 @@ export default class Plan extends React.Component {
                     </li>
                     <li>
                     <label>
-                     County police:
+                     County police
                         <input
                           name="county_police"
                           type="text"
@@ -431,7 +440,7 @@ export default class Plan extends React.Component {
                       </li>
                       <li>
                       <label>
-                       County Sheriff:
+                       County Sheriff
                           <input
                             name="county_sheriff"
                             type="text"
@@ -442,7 +451,7 @@ export default class Plan extends React.Component {
                         </li>
                         <li>
                          <label>
-                        Shelter:
+                        Shelter
                             <input
                               name="shelter_one"
                               type="text"
@@ -452,7 +461,7 @@ export default class Plan extends React.Component {
                         </li>
                           <li>
                           <label>
-                          Shelter:
+                          Shelter
                               <input
                                 name="shelter_two"
                                 type="text"
@@ -462,12 +471,12 @@ export default class Plan extends React.Component {
                             </label>
                           </li>
                           </ul>
-                            <Link to="/dashboard" className="btn btn-lg btn-success" type='submit' role="button">Save</Link>
 
+                          </div>
 
 
       </form>
-
+  <Link to="/dashboard" className="btn btn-lg btn-success" type='submit' role="button">Save</Link>
 
     </div>
     );
