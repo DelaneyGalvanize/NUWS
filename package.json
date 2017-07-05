@@ -6,8 +6,7 @@
     "start": "node ./bin/www",
     "knex": "knex",
     "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run; cd client/ && npm install --only=dev && npm install && npm run build;"
-    },
-
+  },
   "dependencies": {
     "bcrypt-as-promised": "^1.1.0",
     "body-parser": "~1.17.1",
@@ -28,5 +27,5 @@
   },
   "engines": {
     "node": "v7.10.0"
-}
+  }
 }
