@@ -11,8 +11,11 @@ if (env === 'development'){
 
 
 var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
-router.post('/sendsms', function(req, res, next) {
+router.post('/', function(req, res, next) {
   console.log('req.body', req.body)
   console.log("message=", req.body.message)
   if (req.body.message){

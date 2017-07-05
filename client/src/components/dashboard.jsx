@@ -224,11 +224,11 @@ export default class Dashboard extends React.Component {
         </div>
 
         <footer>
-          		<div class="wrap-footer">
-          			<div class="container">
-          				<div class="row">
+          		<div className="wrap-footer">
+          			<div className="container">
+          				<div className="row">
 
-          					<div class="col-md-3 col-footer footer-4">
+          					<div className="col-md-3 col-footer footer-4">
                       <Link to="/plan" className='footer'><h4>© 2017 Nuws Development Group</h4></Link>
           					</div>
           				</div>
