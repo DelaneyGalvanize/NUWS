@@ -157,12 +157,6 @@ export default class Dashboard extends React.Component {
     <Breadcrumb.Item active>
       Autos
     </Breadcrumb.Item>
-    <Breadcrumb.Item active>
-      News
-    </Breadcrumb.Item>
-
-
-
   </Breadcrumb>
 
         {/* <Sms></Sms> */}
