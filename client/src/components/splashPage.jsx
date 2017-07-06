@@ -91,7 +91,6 @@ export default class SplashPage extends React.Component {
 </div>
 </div>
 
-<br></br>
 <div className="container">
     <h4 className='splash-heading'> Features </h4>
 </div>
