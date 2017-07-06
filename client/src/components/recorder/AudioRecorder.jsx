@@ -52,7 +52,7 @@ export default class AudioRecorder extends React.Component<AudioRecorderProps, A
     filename: 'output.wav',
     playLabel: '🔊 Play',
     playingLabel: '❚❚ Playing',
-    recordLabel: '● ',
+    recordLabel: 'Videos',
     recordingLabel: '● ',
     removeLabel: '✖ Remove',
     downloadLabel: '\ud83d\udcbe Save' // unicode floppy disk
@@ -157,7 +157,7 @@ export default class AudioRecorder extends React.Component<AudioRecorderProps, A
   render() {
     return (
       <div className="AudioRecorder">
-        <button
+        <a
           className={
             [
               'AudioRecorder-button',
@@ -172,22 +172,22 @@ export default class AudioRecorder extends React.Component<AudioRecorderProps, A
           {this.state.audioData && this.state.isPlaying && this.props.playingLabel}
           {!this.state.audioData && !this.state.isRecording && this.props.recordLabel}
           {!this.state.audioData && this.state.isRecording && this.props.recordingLabel}
-        </button>
+        </a>
         {this.state.audioData &&
-          <button
+          <a
             className="AudioRecorder-remove"
             onClick={this.onRemoveClick}
           >
             {this.props.removeLabel}
-          </button>
+          </a>
         }
         {this.state.audioData && this.props.downloadable &&
-          <button
+          <a
             className="AudioRecorder-download"
             onClick={this.onDownloadClick}
           >
             {this.props.downloadLabel}
-          </button>
+          </a>
         }
       </div>
     );

@@ -35,7 +35,7 @@ class Navbar extends React.Component {
     else {
       signOutButton = (
         <li role="presentation">
-          <a onClick={this.signOutFunc}>Sign Out</a>
+        <Button>  <a onClick={this.signOutFunc}>Sign Out</a> </Button>
           {/* href="#"  */}
         </li>
       )
@@ -53,7 +53,7 @@ class Navbar extends React.Component {
             {signOutButton}
           </ul>
         </nav>
-        {/* <h2 className="text-muted">Nuws</h2> */}
+        <h2>Nuws</h2>
       </div>
     )
   }

@@ -127,21 +127,47 @@ export default class Dashboard extends React.Component {
       return (
 
       <div>
-      
-        <Breadcrumb>
-    <Breadcrumb.Item href="#">
-      Home
+
+      <Breadcrumb className='bc-heading'>
+        <li><Sms></Sms></li>
+        {/* <li><AudioRecorder></AudioRecorder></li> */}
+        {/* <AudioRecorder></AudioRecorder> */}
+    <Breadcrumb.Item>
+      News
     </Breadcrumb.Item>
-    <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs">
-      Library
+    <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs" >
+      Entertainment
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Sports
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Money
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Lifestyle
     </Breadcrumb.Item>
     <Breadcrumb.Item active>
-      Data
+      Health & Fitness
     </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Food & Drink
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Travel
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Autos
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active >
+      Styles
+    </Breadcrumb.Item>
+
+
   </Breadcrumb>
-        <AudioRecorder></AudioRecorder>
-        <Sms></Sms>
-        <h4> Top Entertainment</h4>
+
+        {/* <Sms></Sms> */}
+        <h4 className='news-heading'> Top Entertainment</h4>
         <div className="container">
 
           <Grid>
@@ -197,31 +223,31 @@ export default class Dashboard extends React.Component {
 
         <div className="container">
           <div className="news-stories">
-            <h4> Daily News </h4>
+            <h4 className='news-heading'> Daily News </h4>
             <Dashboard2></Dashboard2>
           </div>
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> Trending </h4>
+            <h4 className='news-heading'> Trending </h4>
             <Dashboard4></Dashboard4>
           </div>
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> Sports </h4>
+            <h4 className='news-heading'> Sports </h4>
             <Dashboard3></Dashboard3>
           </div>
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> Technology </h4>
+            <h4 className='news-heading'> Technology </h4>
             <Dashboard5></Dashboard5>
           </div>
         </div>
         <div className="container">
           <div className="news-stories">
-            <h4> More Entertainment</h4>
+            <h4 className='news-heading'> More Entertainment</h4>
             <Dashboard6></Dashboard6>
           </div>
         </div>

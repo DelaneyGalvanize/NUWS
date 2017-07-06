@@ -1,4 +1,4 @@
-What problem does your project solve?
+
 	Domestic violence is not a singular incident, it’s an insidious problem deeply rooted in our culture. We are overwhelmed with news stories about domestic violence , from athletes beating their significant others in public elevators or in their own homes to celebrities publicly abusing their girlfriends. This problem is not one that will go away quickly or quietly. Women are much more likely to be victims of intimate partner violence with 85 percent of domestic abuse victims being women and 15 percent men. Too many women have been held captive by domestic violence — whether through physical abuse, financial abuse, emotional abuse or a combination of all three.  I am making a disguised news app for victims of domestic violence who are afraid to get out of their abusive relationship. It will offer a number of features.
 
 Who has this problem?

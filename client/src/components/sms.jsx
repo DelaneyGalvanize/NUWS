@@ -33,7 +33,7 @@ export default class Sms extends React.Component {
       <div>
       {/* <p>Enter Message: </p> */}
     {/* <input onChange={this.changeMessage.bind(this)} value={this.state.message} placeholder="Save Me"/> */}
-        <button onClick={this.sendSms.bind(this)}>Send message</button>
+        <a className='sms-button' onClick={this.sendSms.bind(this)}>Health</a>
 
       </div>
     );

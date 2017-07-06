@@ -8,6 +8,7 @@ import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Image from 'react-bootstrap/lib/Image'
 import LoginPage from './loginPage.jsx'
+import $ from 'jquery';
 
 
 
@@ -18,19 +19,22 @@ export default class SplashPage extends React.Component {
     return (
 
 
-      <div className='container'>
-        <div className="jumbotron head">
+      <div>
+        <div className="head">
           <div id="page-content">
-      <div className="box-content  box-2  box-style-2 box-shadow">
+      <div className="box-content  box-2 box-style-2 box-shadow">
+        <br></br>
+        <br></br>
         <h1 className='stat heads'> Welcome to Nuws. </h1>
         <h2 className='stat heads'>Being Aware You May Find Yourself In A Dangerous Relationship Is A Great First Step.</h2>
+        <div id="gradient" />
         <br></br>
         <br></br>
       </div>
     </div>
       </div>
 
-  <div className="jumbotron">
+  <div>
     <Grid>
    <Row>
    <Col xs={6} md={6}>
@@ -71,7 +75,7 @@ export default class SplashPage extends React.Component {
 </Grid>
 </div>
 
-<div className="jumbotron splic">
+<div className="splic">
   <div id="page-content">
 <div className="box-content box-2 container box-style-3 box-shadow">
   <br></br>
@@ -85,7 +89,7 @@ export default class SplashPage extends React.Component {
 </div>
 </div>
 
-  <div className="jumbotron">
+  <div>
     <Grid>
       <Row >
       <Col xs={6} md={4}>
