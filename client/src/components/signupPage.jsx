@@ -50,7 +50,7 @@ export default class SignupPage extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Username</label>
+            <label>Email</label>
             <input type="email" value={this.state.email} onChange={this.handleChangeEmail} className="form-control" placeholder="Email" />
           </div>
           <div className="form-group">
@@ -69,7 +69,7 @@ export default class SignupPage extends React.Component {
                   <label>Emergency Message</label>
                   <input type="text"  className="form-control" placeholder="Please Come Get Me" />
           </div>
-          <button type="submit" className="btn btn-default">Sign Up!</button>
+          <button type="submit" className="btn btn-default loginbut">Sign Up!</button>
         </form>
       </div>
     </div>

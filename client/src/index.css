@@ -31,8 +31,8 @@ h5 {
   max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
+  background-color: #BAD7E7;
+  border: 1px solid black;
 
   .form-signin-heading,
 	.checkbox {
@@ -554,7 +554,6 @@ h5{
 /*splash page*/
 .splashstat, .splashstat2{
   box-shadow: 1px 0px 1px 0px;
-  /*margin: 3px;*/
   width:100%;
   height: 200px;
   background-color: #BAD7E7
@@ -569,7 +568,9 @@ h5{
     font-family: 'Kurale', serif;
 }
 
-
+.head {
+  margin:5px;
+}
 .heads {
   font-size: 68px;
 }
@@ -585,9 +586,9 @@ h5{
   text-align: center
 }*/
 
-.splic {
-  margin:10px;
-}
+/*.splic {
+  margin:2px;
+}*/
 
 .breadcrumb > .active {
   color:black;
@@ -618,4 +619,16 @@ h5{
   border-bottom: 1px solid black;
   font-family: 'Kurale', serif;
   font-size: 34px;
+}
+
+.box-content {
+  margin:10px;
+}
+
+.box-content2{
+  margin:4px;
+}
+
+.loginbut {
+  color:black;
 }
