@@ -6,8 +6,8 @@ exports.seed = function(knex, Promise) {
         knex('users').insert(
           [{
             id: 1,
-            email: 'admin@ws.com',
-            hashed_password: '$2a$12$J18d3YZSUbZLaZ.PRws3veE3ZscyzenJm.L9xmhfQ8hhU9KpZwEB2',
+            email: 'delaney@nuws.com',
+            hashed_password: '$2a$12$jXbRJDI8iSL4fcUfC81ZWe7h9brKsEdvK5qWXLrZ3KBMYESJseFZ',
             created_at: new Date('2017-06-24 14:26:16 UTC'),
             updated_at: new Date('2017-06-24 14:26:16 UTC')
           }])

@@ -471,7 +471,7 @@ h5{
 
 }
 .daily {
-  height: 450px;
+  height: 430px;
   box-shadow: 1px 1px 1px 1px;
   text-align: left;
 
@@ -487,25 +487,25 @@ h5{
 }
 
 .sports {
-  height: 300px;
+  height: 260px;
   box-shadow: 1px 1px 1px 1px;
   text-align: left;
 }
 
 .trending {
-  height: 270px;
+  height: 260px;
   box-shadow: 1px 1px 1px 1px;
   text-align: left;
 }
 
 .tech {
   box-shadow: 1px 1px 1px 1px;
-  height: 300px;
+  height: 260px;
   text-align: left;
 }
 
 .entertainment {
-  height: 280px;
+  height: 250px;
   box-shadow: 1px 1px 1px 1px;
   text-align: left;
 }
