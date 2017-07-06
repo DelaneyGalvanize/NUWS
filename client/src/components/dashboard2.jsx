@@ -115,14 +115,14 @@ export default class Dashboard2 extends React.Component {
         <Thumbnail className="daily">
           {newsList[0]}
           {/* <p>{des}</p> */}
-          <div><a href={linked}>{des}</a></div>
+          <div><a className='dailytitle' href={linked}>{des}</a></div>
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
         <Thumbnail className="daily">
           {newsList2[0]}
           {/* <p>{des2}</p> */}
-          <div><a href={link2}>{des2}</a></div>
+          <div><a className='dailytitle' href={link2}>{des2}</a></div>
 
         </Thumbnail>
       </Col>
@@ -130,14 +130,14 @@ export default class Dashboard2 extends React.Component {
         <Thumbnail className="daily">
           {newsList3[0]}
           {/* <p>{des3}</p> */}
-          <div><a href={link3}>{des3}</a></div>
+          <div><a className='dailytitle' href={link3}>{des3}</a></div>
         </Thumbnail>
       </Col>
       <Col xs={6} md={6}>
         <Thumbnail className="daily">
           {newsList4[0]}
           {/* <p>{des4}</p> */}
-          <div><a href={link4}>{des4}</a></div>
+          <div><a className='dailytitle' href={link4}>{des4}</a></div>
         </Thumbnail>
       </Col>
       </Row>

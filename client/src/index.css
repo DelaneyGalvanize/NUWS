@@ -460,7 +460,6 @@ h5{
   border: 1px solid black;
   height: 210px;
   text-align: center;
-
 }
 
 .store {
@@ -474,26 +473,41 @@ h5{
 .daily {
   height: 450px;
   box-shadow: 1px 1px 1px 1px;
+  text-align: left;
+
+}
+
+.dailytitle, .sportstitle, .trendtitle, .techtitle, .celebtitle, .celebstitle {
+  text-align: left;
+  color:black;
+}
+
+.celebstitle {
+  font-size: 20px;
 }
 
 .sports {
   height: 300px;
   box-shadow: 1px 1px 1px 1px;
+  text-align: left;
 }
 
 .trending {
   height: 270px;
   box-shadow: 1px 1px 1px 1px;
+  text-align: left;
 }
 
 .tech {
   box-shadow: 1px 1px 1px 1px;
   height: 300px;
+  text-align: left;
 }
 
 .entertainment {
   height: 280px;
   box-shadow: 1px 1px 1px 1px;
+  text-align: left;
 }
 
 .coups {
@@ -558,15 +572,16 @@ h5{
   margin:10px;
 }
 
-/*.active {
-  margin-right:50px;
-}*/
+.breadcrumb > .active {
+  color:black;
+}
 
 .breadcrumb > li + li:before {
-    color: black;
+    color: blue;
     content: "●";
     padding: 0 5px;
     margin-right:55px;
+
 }
 
 .news-heading {
@@ -576,4 +591,8 @@ h5{
 .bc-heading {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+}
+
+.smsword {
+  margin-left: -10px;
 }

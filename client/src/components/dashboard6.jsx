@@ -33,15 +33,15 @@ export default class Dashboard6 extends React.Component {
                 // console.log('result',result);
               userData = {
                  articles: result.articles,
-                 imageP : result.articles[0].urlToImage,
+                 imageP : result.articles[4].urlToImage,
                  imageP2: result.articles[1].urlToImage,
                  imageP3: result.articles[2].urlToImage,
                  imageP4: result.articles[3].urlToImage,
-                 title: result.articles[0].title,
+                 title: result.articles[4].title,
                  title2: result.articles[1].title,
                  title3: result.articles[2].title,
                  title4: result.articles[3].title,
-                 linked: result.articles[0].url,
+                 linked: result.articles[4].url,
                  link2: result.articles[1].url,
                  link3: result.articles[2].url,
                  link4: result.articles[3].url
@@ -114,25 +114,25 @@ export default class Dashboard6 extends React.Component {
     <Col xs={6} md={3} >
       <Thumbnail className='entertainment'>
         {newsList[0]}
-        <div><a href={linked}>{title}</a></div>
+        <div><a className='celebtitle' href={linked}>{title}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='entertainment'>
         {newsList2[0]}
-        <div><a href={link2}>{title2}</a></div>
+        <div><a className='celebtitle' href={link2}>{title2}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='entertainment'>
         {newsList3[0]}
-        <div><a href={link3}>{title3}</a></div>
+        <div><a className='celebtitle' href={link3}>{title3}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='entertainment'>
         {newsList4[0]}
-        <div><a href={link4}>{title4}</a></div>
+        <div><a className='celebtitle' href={link4}>{title4}</a></div>
       </Thumbnail>
     </Col>
     </Row>

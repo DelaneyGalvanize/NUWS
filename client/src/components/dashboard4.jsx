@@ -114,25 +114,25 @@ export default class Dashboard4 extends React.Component {
     <Col xs={6} md={3} >
       <Thumbnail className='trending'>
         {newsList[0]}
-        <div><a href={linked}>{title}</a></div>
+        <div><a className='trendtitle' href={linked}>{title}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='trending'>
         {newsList2[0]}
-        <div><a href={link2}>{title2}</a></div>
+        <div><a className='trendtitle' href={link2}>{title2}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='trending'>
         {newsList3[0]}
-        <div><a href={link3}>{title3}</a></div>
+        <div><a className='trendtitle' href={link3}>{title3}</a></div>
       </Thumbnail>
     </Col>
     <Col xs={6} md={3}>
       <Thumbnail className='trending'>
         {newsList4[0]}
-        <div><a href={link4}>{title4}</a></div>
+        <div><a className='trendtitle' href={link4}>{title4}</a></div>
       </Thumbnail>
     </Col>
     </Row>

@@ -128,14 +128,12 @@ export default class Dashboard extends React.Component {
 
       <div>
 
-      <Breadcrumb className='bc-heading'>
-        <li><Sms></Sms></li>
-        {/* <li><AudioRecorder></AudioRecorder></li> */}
-        {/* <AudioRecorder></AudioRecorder> */}
-    <Breadcrumb.Item>
+      <Breadcrumb className='bc-heading active'>
+<li><AudioRecorder></AudioRecorder></li>
+    <Breadcrumb.Item active>
       News
     </Breadcrumb.Item>
-    <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs" >
+    <Breadcrumb.Item active href="http://getbootstrap.com/components/#breadcrumbs" >
       Entertainment
     </Breadcrumb.Item>
     <Breadcrumb.Item active >
@@ -156,12 +154,13 @@ export default class Dashboard extends React.Component {
     <Breadcrumb.Item active >
       Travel
     </Breadcrumb.Item>
-    <Breadcrumb.Item active >
+    <Breadcrumb.Item active>
       Autos
     </Breadcrumb.Item>
-    <Breadcrumb.Item active >
-      Styles
+    <Breadcrumb.Item active>
+      News
     </Breadcrumb.Item>
+
 
 
   </Breadcrumb>
@@ -177,19 +176,19 @@ export default class Dashboard extends React.Component {
               <Carousel.Item>
                 {newsList[0]}
                 {/* <h5>{title}</h5> */}
-                <div><a href={linked}>{title}</a></div>
+                <div><a className='celebstitle' href={linked}>{title}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList2[0]}
-                  <div><a href={link2}>{title2}</a></div>
+                  <div><a className='celebstitle' href={link2}>{title2}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList3[0]}
-                  <div><a href={link3}>{title3}</a></div>
+                  <div><a className='celebstitle' href={link3}>{title3}</a></div>
               </Carousel.Item>
               <Carousel.Item>
                 {newsList4[0]}
-                  <div><a href={link4}>{title4}</a></div>
+                  <div><a className='celebstitle' href={link4}>{title4}</a></div>
               </Carousel.Item>
 </Carousel>
 </Col>
@@ -198,21 +197,25 @@ export default class Dashboard extends React.Component {
 <Col xs={6} md={6}>
   <Col xs={6} md={6}>
     <Thumbnail className='store' src="https://sanctuaryofstyle.files.wordpress.com/2012/01/nordstrom-rack-logo.jpg"  >
+<Sms></Sms>
     </Thumbnail>
   </Col>
 
   <Col xs={6} md={6}>
     <Thumbnail  className='store' src="http://www.vailplace.org/wp-content/uploads/2012/12/1-target-logo.jpg" >
+
   </Thumbnail>
   </Col>
 
   <Col xs={6} md={6}>
     <Thumbnail  src="https://seeklogo.com/images/P/pinterest-icon-logo-D4965B6748-seeklogo.com.gif" className="store" >
+
     </Thumbnail>
   </Col>
 
   <Col xs={6} md={6}>
     <Thumbnail  src="https://www.cuckooforcoupondeals.com/wp-content/uploads/2015/01/Ben-Jerrys-COupon.png" className='store'>
+
     </Thumbnail>
   </Col>
 
@@ -257,8 +260,8 @@ export default class Dashboard extends React.Component {
           			<div className="container">
           				<div className="row">
 
-          					<div className="col-md-3 col-footer footer-4">
-                      <Link to="/plan" className='footer'><h4>© 2017 Nuws Development Group</h4></Link>
+          					<div>
+                      <Link to="/plan"><h4>© 2017 Nuws Development Group</h4></Link>
           					</div>
           				</div>
           			</div>
